@@ -8,10 +8,10 @@
 8.  SELECT * FROM countries WHERE NOT indep_year IS NULL;
 10. SELECT * FROM countries WHERE name LIKE '%st%';
 11. SELECT * FROM countries WHERE name LIKE 'an%';
-12. SELECT * FROM countries WHERE indep_year <= 1990 OR population >= 100000;
+12. SELECT * FROM countries WHERE indep_year < 1990 OR population > 100000;
 13. SELECT * FROM countries WHERE code IN ('DZA', 'ALB') AND indep_year <= 1990;
 14. SELECT region FROM countries;
-15. SELECT name || 'の人口は' || population || '人です' FROM countries;
+15. SELECT CONCAT(name, 'の人口は' , population, '人です' ) AS 'POPULATION' FROM countries;
 16. SELECT name, life_expectancy FROM countries WHERE life_expectancy IS NOT NULL ORDER BY life_expectancy ASC;
 17. SELECT name, life_expectancy FROM countries WHERE life_expectancy IS NOT NULL ORDER BY life_expectancy DESC;
 18. SELECT name, life_expectancy, indep_year FROM countries ORDER BY life_expectancy DESC, indep_year DESC;
