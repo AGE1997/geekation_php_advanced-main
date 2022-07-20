@@ -1,0 +1,12 @@
+@media screen and (max-width: 2020px) {
+	/* 1024pxまでの幅の場合に適応される */
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input, textarea {
+    display: block;
+    margin: 0, auto;
+  }
+}
