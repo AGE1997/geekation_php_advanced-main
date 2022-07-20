@@ -1,0 +1,29 @@
+
+tr {
+	border: 1px solid black;
+}
+
+
+.col-12 .database {
+	margin:0 auto;
+	width: 100%;
+}
+
+.col-12 .database td {
+	max-width: 300px;
+	max-height: 200px;
+	overflow: hidden;
+}
+table {
+	border:1px solid white;
+	border-collapse: collapse;
+}
+td {
+	border:1px solid white;
+	background-color: darkgray;
+}
+th {
+color: white;
+background-color: #000;
+border:1px solid white;
+}
