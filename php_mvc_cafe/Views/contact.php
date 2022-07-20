@@ -64,6 +64,7 @@ if (isset($_POST['cancel']) && $_POST['cancel']) {
 
 if (isset($_POST['id']) && $_POST['id']) {
     $contact->contactDelete();
+    header("Location:/contact.php");
 }
 
 ?>
