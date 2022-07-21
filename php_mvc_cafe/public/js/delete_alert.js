@@ -1,4 +1,5 @@
 function confirmDelete() {
-  //確認ダイアログを表示する
-  confirm( "本当に削除しますか？" );
+  var ret=confirm("削除を実行しますか？");
+  if(!ret) alert("削除をキャンセルしました");
+  return ret;
 }

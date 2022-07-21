@@ -142,7 +142,7 @@ if (isset($_POST['id']) && $_POST['id']) {
                 </form>
                 <form action="" method="POST">
                   <td>
-                    <button id="delete" type="submit" value="<?=$contact['id'] ?>" name="id" onclick="confirmDelete()">削除</button>
+                    <button id="delete" type="submit" value="<?=$contact['id'] ?>" name="id" onclick="return confirmDelete()">削除</button>
                   </td>
                 </form>
                 
